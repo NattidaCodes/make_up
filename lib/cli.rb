@@ -37,12 +37,22 @@ class CLI
     
     recipe_instance = Recipe.all[index]
     
-    display_ingredients
+    display_recipe_ingredients(recipe_instance)
     
   end
   
-  def display_ingredients
-    
+ 
+  def display_recipe_ingredients(recipe)
+    puts "\n"
+    puts recipe.title
+    puts "\n"
+    puts "\n"
+    puts recipe.ingredients
+    puts "\n"
+    puts recipe.details
+    puts "\n"
   end
+  
+  
   
 end
