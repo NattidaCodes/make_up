@@ -10,7 +10,7 @@ class API
     
     #title 
     #ingredients
-    #href detialed instructions
+    #href detailed instructions
     
     array_of_recipes.each do |results_hash|
       recipe = Recipe.new
@@ -18,8 +18,6 @@ class API
       recipe.ingredients = results_hash["ingredients"]
       recipe.details = results_hash["href"]
     end
-    binding.pry
-    
   end
   
 end
