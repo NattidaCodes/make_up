@@ -1,11 +1,15 @@
 class Recipe
   
-  attr_accessor :title, :ingredients, :href
-  
   @@all = []
+  
+  attr_accessor :title, :ingredients, :details
   
   def initialize
     @@all << self 
+  end
+  
+  def self.all
+    @@all
   end
   
 end

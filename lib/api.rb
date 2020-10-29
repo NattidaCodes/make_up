@@ -14,11 +14,11 @@ class API
     
     array_of_recipes.each do |results_hash|
       recipe = Recipe.new
-      recipe.name = results_hash["title"]
+      recipe.title = results_hash["title"]
       recipe.ingredients = results_hash["ingredients"]
       recipe.details = results_hash["href"]
     end
-    
+    binding.pry
     
   end
   
