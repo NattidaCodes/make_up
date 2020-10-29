@@ -5,7 +5,20 @@ class API
     uri = URI(url)
     response = Net::HTTP.get(uri)
     hash = JSON.parse(response)
-    binding.pry
+    
+    array_of_recipes = hash["results"]
+    
+    #title 
+    #ingredients
+    #href detialed instructions
+    
+    array_of_recipes.each do |results_hash|
+      recipe = Recipe.new
+      recipe.name = results_hash["title"]
+      recipe.ingredients = results_hash["ingredients"]
+      recipe.details = results_hash["href"]
+    end
+    
     
   end
   
