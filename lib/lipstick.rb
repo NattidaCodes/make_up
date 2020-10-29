@@ -1,3 +1,3 @@
-class Lipstick 
+class Recipe
   
 end
