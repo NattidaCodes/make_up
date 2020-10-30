@@ -4,6 +4,7 @@ class CLI
     puts "Welcome Chef"
     API.fetch_results
     self.recipe_menu
+    goodbye 
   end
   
   def recipe_menu
@@ -19,8 +20,6 @@ class CLI
       users_recipe_choice
       
       recipe_menu
-    else
-      puts "Goodbye!"
       
     end
   end
@@ -58,6 +57,8 @@ class CLI
     puts "\n"
   end
   
-  
+  def goodbye
+    puts "Enjoy your recipe, Goodbye!"
+  end
   
 end
