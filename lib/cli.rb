@@ -8,6 +8,7 @@ class CLI
   
   def recipe_menu
     puts "Would you like to choose a recipe?"
+    puts "\n"
     puts "Type 'yes' to select a recipe or 'no' to exit"
     
     user_input = gets.strip
@@ -16,6 +17,10 @@ class CLI
       puts "What will you make today?"
       display_list_of_recipes
       users_recipe_choice
+      
+      recipe_menu
+    else
+      puts "Goodbye!"
       
     end
   end
@@ -47,9 +52,9 @@ class CLI
     puts recipe.title
     puts "\n"
     puts "\n"
-    puts recipe.ingredients
+    puts "Ingredients: " + recipe.ingredients
     puts "\n"
-    puts recipe.details
+    puts "Instructions: " + recipe.details
     puts "\n"
   end
   
