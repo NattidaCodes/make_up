@@ -8,10 +8,6 @@ class API
     
     array_of_recipes = hash["results"]
     
-    #title 
-    #ingredients
-    #href detailed instructions
-    
     array_of_recipes.each do |results_hash|
       recipe = Recipe.new
       recipe.title = results_hash["title"]

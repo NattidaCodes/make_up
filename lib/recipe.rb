@@ -12,4 +12,5 @@ class Recipe
     @@all
   end
   
+  
 end
