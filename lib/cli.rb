@@ -13,7 +13,7 @@ class CLI
     
     user_input = gets.strip
     
-    if user_input == "yes"
+    if user_input == "yes" || user_input == "Yes"
       puts "What will you make today?"
       display_list_of_recipes
       users_recipe_choice
