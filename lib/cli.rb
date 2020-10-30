@@ -10,7 +10,7 @@ class CLI
   def recipe_menu
     puts "Would you like to choose a recipe?"
     puts "\n"
-    puts "Type 'yes' to select a recipe or 'no' to exit"
+    puts "Type 'yes' to select a recipe or any key to exit:"
     
     user_input = gets.strip
     
