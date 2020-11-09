@@ -4,5 +4,5 @@ require_relative "./lib/recipe"
 
 
 require 'pry'
-require 'net/http' #requests from api
-require 'json' #allows to parse data from api
+require 'net/http' 
+require 'json'
