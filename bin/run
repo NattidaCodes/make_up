@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby #shebang tells the interpreter that we're running ruby
+#!/usr/bin/env ruby
 
 require_relative "../environment"
 
